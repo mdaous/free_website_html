@@ -1,0 +1,197 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*this is header down here*/
+
+header{
+	display: grid;
+	flex-direction: row;
+	width: 100%;
+	height: 500px;
+	background-image: url("\headerimag.jpg");
+
+}
+
+ 
+header > .container {
+	display: grid;
+	flex-direction: column;
+	justify-self: center;
+	width: 80%;
+
+
+}
+
+.container > h1{
+	align-self: end;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.p_in_header{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+	justify-self: center;
+	align-self: flex-start;
+	border-top:2px solid rgb(153, 93, 223); ;
+	border-bottom:2px solid rgb(153, 93, 223); ;
+	padding: 3px;
+	word-spacing: 0.7em;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(9, 19, 71, 0.671);
+}
+h1{
+	padding: 0;
+	margin: 0;
+}
+
+.nav_con{
+	margin-left:10% ;
+}
+
+/***************/
+
+/******************the ballbord at header*/
+ .memo {
+   text-transform: uppercase;
+  align-self: end;
+   justify-self: center;
+  padding: 0;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  color: rgb(223, 185, 185);
+  
+}
+.memo> p { margin:0; }
+#error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+#code:hover { text-shadow: 0 0 100px rgb(132, 213, 221),0 0 40px rgb(78, 219, 172),0 0 8px DarkRed; }
+#error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+.memo >#error > span {
+  animation: upper 11s linear infinite;
+}
+.memo > #code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+.memo > #code > span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+/******************the ballbord at header*/
+
+/******** this is section under hedader*/
+
+.container_2           /*this clas is the container under the header*/
+{
+align-self:center;
+display: grid;
+grid-template-columns: 50%;
+column-gap: 3em;
+}
+
+.div_img          /*the div in the right has img.*/
+{
+grid-column: 1/2;
+margin-left:10% ;
+display: flex;
+flex-direction: column;
+justify-content:center;
+}
+.div_img >img   { /*the  img div in the right has img.*/
+ align-self: center;
+ margin: 5%;
+ border-radius: 40%;
+ 
+}
+.div_img>h1 {
+	text-align: center;
+	padding: 0;
+	margin: 10% 0 0 0;
+
+	
+} 
+.div_img>p{
+	justify-self: flex-start;
+	text-align: center;
+	padding: 0;
+	margin: 10%;
+
+}
+
+.div_has_para>h1
+{
+	text-align: center;
+	padding: 5%;
+}  
+.div_has_para > p
+ {
+	line-height: 1.5em;
+	text-align: center;
+
+
+}
+/*tjs for section of div that has h1 and para.*/
+
+
+
+
+
+.div_has_para{
+	background-color: #33f0fb;
+	width: 100%;
+	height: 100%;
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20% ;
+
+}
+.div_has_para>h1{
+	  padding: 0;
+	  margin: 7%;
+	  justify-self:flex-start ;
+  }
+  .div_has_para>p{
+	justify-self:flex-end ;
+	padding: 10%;
+
+  }
+
+
+
+/********end of section under hedader*/
+
+
+/********section 3*/
+
+
+
+
